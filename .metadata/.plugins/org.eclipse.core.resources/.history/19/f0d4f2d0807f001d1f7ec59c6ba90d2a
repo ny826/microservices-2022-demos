@@ -1,0 +1,19 @@
+package com.bvr;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserDaoService {
+
+	public UserDaoService() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private static List<User> users = new ArrayList<>();
+	
+	private static int userCount = 3;
+	
+	static {
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.bvr.models;
+
+public class Car {
+
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
