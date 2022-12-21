@@ -6,7 +6,7 @@ logging:
 
 spring:
   profiles:
-    active: "dev"
+    default : "prod"
   main:
     banner-mode: "off"
 
@@ -16,7 +16,7 @@ server:
 ---
 
 spring:
-  profiles: 
+  config: 
     activate :
       on-profile : "dev"
 server:
@@ -32,7 +32,7 @@ server:
 ---
 
 spring:
-  profiles: 
+  config: 
     activate :
       on-profile : "prod"
 server:
