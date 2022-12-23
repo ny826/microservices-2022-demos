@@ -4645,3 +4645,301 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-12-23 15:12:03,149 [Worker-562: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2022-12-23 15:12:03,155 [Worker-562: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-eureka\src\test\resources
 2022-12-23 15:12:22,005 [Worker-569: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates/io/netty/netty-resolver-dns-native-macos/4.1.86.Final/netty-resolver-dns-native-macos-4.1.86.Final-javadoc.jar
+2022-12-23 15:12:22,015 [Worker-569: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for io.netty:netty-resolver-dns-native-macos:4.1.86.Finalosx-x86_64
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.86.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-12-23 16:25:33,977 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.7.7/spring-boot-starter-parent-2.7.7.pom
+2022-12-23 16:25:34,413 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.7.7/spring-boot-starter-parent-2.7.7.pom
+2022-12-23 16:25:34,614 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.7.7/spring-boot-dependencies-2.7.7.pom
+2022-12-23 16:25:35,439 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.7.7/spring-boot-dependencies-2.7.7.pom
+2022-12-23 16:25:35,668 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/13.0.14.Final/infinispan-bom-13.0.14.Final.pom
+2022-12-23 16:25:35,981 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/13.0.14.Final/infinispan-bom-13.0.14.Final.pom
+2022-12-23 16:25:36,186 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/13.0.14.Final/infinispan-build-configuration-parent-13.0.14.Final.pom
+2022-12-23 16:25:36,443 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/13.0.14.Final/infinispan-build-configuration-parent-13.0.14.Final.pom
+2022-12-23 16:25:36,748 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.50.v20221201/jetty-bom-9.4.50.v20221201.pom
+2022-12-23 16:25:36,991 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.50.v20221201/jetty-bom-9.4.50.v20221201.pom
+2022-12-23 16:25:37,284 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2020.0.26/reactor-bom-2020.0.26.pom
+2022-12-23 16:25:37,533 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2020.0.26/reactor-bom-2020.0.26.pom
+2022-12-23 16:25:37,755 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/5.5.16/spring-integration-bom-5.5.16.pom
+2022-12-23 16:25:38,243 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/5.5.16/spring-integration-bom-5.5.16.pom
+2022-12-23 16:25:38,456 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.7.6/spring-security-bom-5.7.6.pom
+2022-12-23 16:25:38,739 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.7.6/spring-security-bom-5.7.6.pom
+2022-12-23 16:25:40,364 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:admissions-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\admissions-service\pom.xml.
+2022-12-23 16:25:40,584 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:property-access-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\property-access-service\pom.xml.
+2022-12-23 16:25:40,684 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:first-example:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\first-example\pom.xml.
+2022-12-23 16:25:40,760 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:database-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\database-service\pom.xml.
+2022-12-23 16:25:40,869 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:pathology-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\pathology-service\pom.xml.
+2022-12-23 16:25:41,060 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:movie-catalog-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\movie-catalog-service\pom.xml.
+2022-12-23 16:25:41,347 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:demo-service-for-feign:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\demo-service-for-feign\pom.xml.
+2022-12-23 16:25:41,453 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:config-server-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\config-server-service\pom.xml.
+2022-12-23 16:25:41,569 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:circuitbreaker-resilience4j:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\circuitbreaker-resilience4j\pom.xml.
+2022-12-23 16:25:41,673 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:api-gateway-eureka:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\api-gateway-eureka\pom.xml.
+2022-12-23 16:25:41,816 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:eureka-discovery:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\eureka-discovery\pom.xml.
+2022-12-23 16:25:41,942 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:discovery-server:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\discovery-server\pom.xml.
+2022-12-23 16:25:42,044 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:config-profiles-services:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\config-profiles-services\pom.xml.
+2022-12-23 16:25:42,128 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:actuator-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\actuator-service\pom.xml.
+2022-12-23 16:25:42,211 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:feign-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\feign-service\pom.xml.
+2022-12-23 16:25:42,328 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:api-gateway-demo1:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\api-gateway-demo1\pom.xml.
+2022-12-23 16:25:42,436 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:movie-info-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\movie-info-service\pom.xml.
+2022-12-23 16:25:42,537 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:demo:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\demo\pom.xml.
+2022-12-23 16:25:42,619 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:api-gateway-service2:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\api-gateway-service2\pom.xml.
+2022-12-23 16:25:42,710 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:hr-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\hr-service\pom.xml.
+2022-12-23 16:25:42,804 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:ratings-data-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\ratings-data-service\pom.xml.
+2022-12-23 16:25:42,891 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:api-gateway-demo2:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\api-gateway-demo2\pom.xml.
+2022-12-23 16:25:43,627 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.7/spring-boot-maven-plugin-2.7.7.pom
+2022-12-23 16:25:43,976 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.7/spring-boot-maven-plugin-2.7.7.pom
+2022-12-23 16:25:44,170 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.7/spring-boot-maven-plugin-2.7.7.jar
+2022-12-23 16:25:44,630 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.7.7/spring-boot-maven-plugin-2.7.7.jar
+2022-12-23 16:25:44,765 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:inline-activemq-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\pom.xml.
+2022-12-23 16:25:44,956 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7.pom
+2022-12-23 16:25:45,209 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7.pom
+2022-12-23 16:25:45,402 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7.pom
+2022-12-23 16:25:45,637 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7.pom
+2022-12-23 16:25:45,856 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7.pom
+2022-12-23 16:25:46,071 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7.pom
+2022-12-23 16:25:46,336 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7.pom
+2022-12-23 16:25:46,563 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7.pom
+2022-12-23 16:25:46,765 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7.pom
+2022-12-23 16:25:46,995 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7.pom
+2022-12-23 16:25:47,311 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24.pom
+2022-12-23 16:25:47,541 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24.pom
+2022-12-23 16:25:47,807 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24.pom
+2022-12-23 16:25:48,035 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24.pom
+2022-12-23 16:25:48,235 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24.pom
+2022-12-23 16:25:48,447 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24.pom
+2022-12-23 16:25:48,862 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7.pom
+2022-12-23 16:25:49,078 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7.pom
+2022-12-23 16:25:49,272 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7.pom
+2022-12-23 16:25:49,489 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7.pom
+2022-12-23 16:25:49,694 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7.pom
+2022-12-23 16:25:49,923 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7.pom
+2022-12-23 16:25:50,254 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7.jar
+2022-12-23 16:25:50,451 [AetherRepositoryConnector-repo.maven.apache.org-16-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7.jar
+2022-12-23 16:25:50,484 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7.jar
+2022-12-23 16:25:50,510 [AetherRepositoryConnector-repo.maven.apache.org-16-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7.jar
+2022-12-23 16:25:50,515 [AetherRepositoryConnector-repo.maven.apache.org-16-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7.jar
+2022-12-23 16:25:50,710 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7.jar
+2022-12-23 16:25:50,732 [AetherRepositoryConnector-repo.maven.apache.org-16-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7.jar
+2022-12-23 16:25:50,780 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7.jar
+2022-12-23 16:25:50,963 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24.jar
+2022-12-23 16:25:50,963 [AetherRepositoryConnector-repo.maven.apache.org-16-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24.jar
+2022-12-23 16:25:51,080 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24.jar
+2022-12-23 16:25:58,339 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24.jar
+2022-12-23 16:25:58,586 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7.jar
+2022-12-23 16:25:58,979 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7.jar
+2022-12-23 16:25:59,205 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7.jar
+2022-12-23 16:25:59,440 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24.jar
+2022-12-23 16:25:59,775 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7.jar
+2022-12-23 16:26:04,110 [AetherRepositoryConnector-repo.maven.apache.org-16-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24.jar
+2022-12-23 16:26:04,251 [AetherRepositoryConnector-repo.maven.apache.org-16-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7.jar
+2022-12-23 16:26:04,987 [AetherRepositoryConnector-repo.maven.apache.org-16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7.jar
+2022-12-23 16:26:11,625 [AetherRepositoryConnector-repo.maven.apache.org-16-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7.jar
+2022-12-23 16:26:12,567 [AetherRepositoryConnector-repo.maven.apache.org-16-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7.jar
+2022-12-23 16:26:12,650 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:api-gateway-service1:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\api-gateway-service1\pom.xml.
+2022-12-23 16:26:12,738 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:nosql-mongo-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\nosql-mongo-service\pom.xml.
+2022-12-23 16:26:24,022 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /inline-activemq-service/src/main/java
+2022-12-23 16:26:24,022 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /inline-activemq-service/src/main/resources
+2022-12-23 16:26:24,027 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /inline-activemq-service/src/main/resources
+2022-12-23 16:26:24,035 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /inline-activemq-service/src/test/java
+2022-12-23 16:26:24,793 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7-sources.jar
+2022-12-23 16:26:25,104 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 52 sec
+2022-12-23 16:26:25,109 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-12-23 16:26:25,187 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-activemq/2.7.7/spring-boot-starter-activemq-2.7.7-sources.jar
+2022-12-23 16:26:25,189 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-activemq:2.7.7
+2022-12-23 16:26:25,382 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bvr:inline-activemq-service:0.0.1-SNAPSHOT @ C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\pom.xml.
+2022-12-23 16:26:25,895 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /inline-activemq-service/src/main/java
+2022-12-23 16:26:25,895 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /inline-activemq-service/src/main/resources
+2022-12-23 16:26:25,895 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /inline-activemq-service/src/main/resources
+2022-12-23 16:26:25,895 [Worker-598: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /inline-activemq-service/src/test/java
+2022-12-23 16:26:26,237 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7-sources.jar
+2022-12-23 16:26:26,320 [Worker-598: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-12-23 16:26:26,659 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.7.7/spring-boot-starter-2.7.7-sources.jar
+2022-12-23 16:26:26,663 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter:2.7.7
+2022-12-23 16:26:26,683 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:26,684 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:26,694 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\actuator-service\src\test\resources
+2022-12-23 16:26:27,011 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,011 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,017 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\admissions-service\src\test\resources
+2022-12-23 16:26:27,042 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,042 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,048 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-demo1\src\test\resources
+2022-12-23 16:26:27,072 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,072 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,079 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-demo2\src\test\resources
+2022-12-23 16:26:27,103 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,103 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,108 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-eureka\src\test\resources
+2022-12-23 16:26:27,131 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,131 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,136 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-service1\src\test\resources
+2022-12-23 16:26:27,160 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,160 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,169 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\api-gateway-service2\src\test\resources
+2022-12-23 16:26:27,192 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,193 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,199 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\circuitbreaker-resilience4j\src\test\resources
+2022-12-23 16:26:27,221 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,221 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,228 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\config-profiles-services\src\test\resources
+2022-12-23 16:26:27,252 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,252 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,258 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\config-server-service\src\test\resources
+2022-12-23 16:26:27,457 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,457 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,463 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\database-service\src\test\resources
+2022-12-23 16:26:27,465 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7-sources.jar
+2022-12-23 16:26:27,486 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,486 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,491 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\demo\src\test\resources
+2022-12-23 16:26:27,659 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,660 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:27,668 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\demo-service-for-feign\src\test\resources
+2022-12-23 16:26:28,005 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,005 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,011 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\discovery-server\src\test\resources
+2022-12-23 16:26:28,320 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,320 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,325 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\eureka-discovery\src\test\resources
+2022-12-23 16:26:28,578 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,579 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,590 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\feign-service\src\test\resources
+2022-12-23 16:26:28,787 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,787 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:28,793 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\first-example\src\test\resources
+2022-12-23 16:26:28,871 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.7.7/spring-boot-2.7.7-sources.jar
+2022-12-23 16:26:28,873 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot:2.7.7
+2022-12-23 16:26:29,172 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:29,172 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:29,180 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\hr-service\src\test\resources
+2022-12-23 16:26:29,248 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:29,248 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:29,248 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:26:29,257 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:26:29,263 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:29,263 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:29,263 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:26:29,892 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:29,892 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:29,894 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:26:29,894 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:26:29,900 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:29,900 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:29,900 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\movie-catalog-service\src\test\resources
+2022-12-23 16:26:30,056 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7-sources.jar
+2022-12-23 16:26:30,136 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,136 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,141 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\movie-info-service\src\test\resources
+2022-12-23 16:26:30,313 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,313 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,319 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\nosql-mongo-service\src\test\resources
+2022-12-23 16:26:30,567 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,568 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,572 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\pathology-service\src\test\resources
+2022-12-23 16:26:30,865 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,866 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:30,873 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\property-access-service\src\test\resources
+2022-12-23 16:26:31,113 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:31,113 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2022-12-23 16:26:31,119 [Worker-602: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\ratings-data-service\src\test\resources
+2022-12-23 16:26:31,672 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.7.7/spring-boot-autoconfigure-2.7.7-sources.jar
+2022-12-23 16:26:31,674 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-autoconfigure:2.7.7
+2022-12-23 16:26:32,569 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7-sources.jar
+2022-12-23 16:26:32,964 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.7.7/spring-boot-starter-logging-2.7.7-sources.jar
+2022-12-23 16:26:32,966 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-logging:2.7.7
+2022-12-23 16:26:33,842 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24-sources.jar
+2022-12-23 16:26:34,513 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-jms/5.3.24/spring-jms-5.3.24-sources.jar
+2022-12-23 16:26:34,516 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-jms:5.3.24
+2022-12-23 16:26:35,231 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24-sources.jar
+2022-12-23 16:26:36,184 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-messaging/5.3.24/spring-messaging-5.3.24-sources.jar
+2022-12-23 16:26:36,186 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-messaging:5.3.24
+2022-12-23 16:26:37,061 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24-sources.jar
+2022-12-23 16:26:37,991 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.3.24/spring-tx-5.3.24-sources.jar
+2022-12-23 16:26:37,993 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-tx:5.3.24
+2022-12-23 16:26:38,753 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7-sources.jar
+2022-12-23 16:26:39,155 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.7.7/spring-boot-starter-test-2.7.7-sources.jar
+2022-12-23 16:26:39,159 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-test:2.7.7
+2022-12-23 16:26:40,032 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7-sources.jar
+2022-12-23 16:26:40,695 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.7.7/spring-boot-test-2.7.7-sources.jar
+2022-12-23 16:26:40,698 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-test:2.7.7
+2022-12-23 16:26:41,506 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7-sources.jar
+2022-12-23 16:26:42,265 [Worker-595: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.7.7/spring-boot-test-autoconfigure-2.7.7-sources.jar
+2022-12-23 16:26:42,267 [Worker-595: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-test-autoconfigure:2.7.7
+2022-12-23 16:26:42,687 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:42,687 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:42,687 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:26:42,688 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:26:42,693 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:26:42,693 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:26:42,693 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:27:59,346 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:27:59,347 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:27:59,347 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:27:59,365 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:27:59,373 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:27:59,373 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:27:59,373 [Worker-602: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:30:09,149 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:30:09,149 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:30:09,150 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:30:09,155 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:30:09,164 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:30:09,164 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:30:09,165 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:30:26,961 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:30:26,961 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:30:26,962 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:30:26,971 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:30:26,979 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:30:26,979 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:30:26,980 [Worker-600: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:32:19,240 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:32:19,240 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:32:19,241 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:32:19,247 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:32:19,252 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:32:19,252 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:32:19,252 [Worker-568: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:33:33,839 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:33:33,839 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:33:33,840 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:33:33,844 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:33:33,849 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:33:33,849 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:33:33,849 [Worker-542: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:33:51,069 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:33:51,069 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:33:51,071 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:33:51,076 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:33:51,085 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:33:51,085 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:33:51,085 [Worker-597: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:36:03,035 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:36:03,035 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:36:03,036 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:36:03,039 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:36:03,047 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:36:03,047 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:36:03,048 [Worker-606: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\CLASSROOM\MICROSERVICES1\inline-activemq-service\src\test\resources
+2022-12-23 16:36:14,213 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:36:14,213 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-23 16:36:14,214 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-23 16:36:14,218 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-12-23 16:36:14,225 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-23 16:36:14,225 [Worker-599: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
