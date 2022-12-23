@@ -23,4 +23,25 @@ public class SpringCloudConfig {
 				.build();
 	}
 
+	
+	/*
+	 * 
+	 * @Bean
+	public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
+		return builder.routes()
+				.route(r -> r
+					.path("/get")
+					.filters(f -> f.addRequestHeader("Hello", "Oracle"))
+					.uri("https://httpbin/org:80"))
+				
+				.route(p -> p
+						.host("*.circuitbreaker.com")
+						.filters(f -> f.circuitBreaker(config -> config.setName("myCmd")))
+						.uri("https://httpbin/org:80"))
+				.build();
+	}
+
+	 * 
+	 * 
+	 * */
 }
